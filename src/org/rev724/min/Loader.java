@@ -1,6 +1,8 @@
 package org.rev724.min;
 
 import java.applet.Applet;
+import java.io.File;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import javax.swing.JMenuBar;
@@ -13,6 +15,7 @@ import org.parabot.environment.scripts.Script;
 import org.parabot.environment.servers.ServerManifest;
 import org.parabot.environment.servers.ServerProvider;
 import org.parabot.environment.servers.Type;
+import org.rev724.min.accessors.Client;
 import org.rev724.min.loader.AppletProvider;
 
 
@@ -33,6 +36,7 @@ public class Loader extends ServerProvider {
 			final ASMClassLoader classLoader = context.getASMClassLoader();
 			final Class<?> clientClass = classLoader.loadClass("client");
 			instance = clientClass.newInstance();
+			setClientInstance(instance);
 			
 			AppletProvider provider = new AppletProvider();
 			provider.supply(instance);
@@ -64,9 +68,9 @@ public class Loader extends ServerProvider {
 		return null;
 	}
 	
-	/*public static Client getClient() {
+	public static Client getClient() {
 		return (Client) Context.getInstance().getClient();
-	}*/
+	}
 	
 	@Override
 	public void addMenuItems(JMenuBar bar) {
@@ -88,11 +92,11 @@ public class Loader extends ServerProvider {
 	
 	@Override
 	public HookFile getHookFile() {
-		/*try {
-			return new HookFile(new URL("http://bot.parabot.org/hooks/724api_hooks_min.xml"), HookFile.TYPE_XML);
+		try {
+			return new HookFile(new File("D:/724_hooks.xml"), HookFile.TYPE_XML);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
-		}*/
+		}
 		return null;
 	}
 	
