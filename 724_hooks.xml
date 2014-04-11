@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<injector>
+	<interfaces>
+		<add>
+			<classname>client</classname>
+			<interface>Client</interface>
+		</add>
+		<add>
+			<classname>Class298_Sub37_Sub15</classname>
+			<interface>MenuAction</interface>
+		</add>
+	</interfaces>
+	<getters>
+		<add>
+			<accessor>MenuAction</accessor>
+			<field>anInt9662</field>
+			<methodname>getId</methodname>
+			<multiplier>946432351</multiplier>
+		</add>
+		<add>
+			<accessor>MenuAction</accessor>
+			<field>anInt9658</field>
+			<methodname>getAction2</methodname>
+			<multiplier>-887503319</multiplier>
+		</add>
+		<add>
+			<accessor>MenuAction</accessor>
+			<field>anInt9663</field>
+			<methodname>getAction3</methodname>
+			<multiplier>-502720623</multiplier>
+		</add>
+		<add>
+			<accessor>MenuAction</accessor>
+			<field>aLong9661</field>
+			<methodname>getAction1</methodname>
+			<desc>I</desc>
+			<multiplier>2236412381003659263</multiplier>
+		</add>
+		<add>
+			<accessor>MenuAction</accessor>
+			<field>aLong9661</field>
+			<methodname>getAction4</methodname>
+			<multiplier>2236412381003659263</multiplier>
+		</add>
+	</getters>
+	
+	<setters>
+
+	</setters>
+	
+	<callbacks>
+		<add>
+			<classname>Class401</classname>
+			<methodname>method4939</methodname>
+			<desc>(LClass298_Sub37_Sub15;IIS)V</desc>
+			<callclass>org/rev724/min/callback/MenuAction</callclass>
+			<callmethod>intercept</callmethod>
+			<calldesc>(Lorg/rev724/min/accessors/MenuAction;II)V</calldesc>
+			<callargs>0,1,2</callargs>
+		</add>
+	</callbacks>
+	
+	<invokers>
+		
+	</invokers>
+</injector>
