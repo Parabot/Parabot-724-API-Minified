@@ -17,6 +17,7 @@ import org.parabot.environment.servers.ServerProvider;
 import org.parabot.environment.servers.Type;
 import org.rev724.min.accessors.Client;
 import org.rev724.min.loader.AppletProvider;
+import org.rev724.min.ui.BotMenu;
 
 
 
@@ -74,7 +75,7 @@ public class Loader extends ServerProvider {
 	
 	@Override
 	public void addMenuItems(JMenuBar bar) {
-		//new BotMenu(bar);
+		new BotMenu(bar);
 	}
 	
 	@Override
