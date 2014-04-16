@@ -9,8 +9,38 @@
 			<classname>Class298_Sub37_Sub15</classname>
 			<interface>MenuAction</interface>
 		</add>
+		<add>
+			<classname>Class365_Sub1_Sub1</classname>
+			<interface>Animable</interface>
+		</add>
+		<add>
+			<classname>Entity</classname>
+			<interface>Character</interface>
+		</add>
+		<add>
+			<classname>Player</classname>
+			<interface>Player</interface>
+		</add>
+		<add>
+			<classname>NPC</classname>
+			<interface>Npc</interface>
+		</add>
+		<add>
+			<classname>Class283</classname>
+			<interface>Scene</interface>
+		</add>
+		<add>
+			<classname>Class341</classname>
+			<interface>SceneData</interface>
+		</add>
 	</interfaces>
 	<getters>
+		<add>
+			<accessor>Scene</accessor>
+			<field>aClass341_3006</field>
+			<methodname>getSceneData</methodname>
+			<desc>%sSceneData</desc>
+		</add>
 		<add>
 			<accessor>MenuAction</accessor>
 			<field>anInt9662</field>
@@ -41,7 +71,49 @@
 			<field>aLong9661</field>
 			<methodname>getAction4</methodname>
 			<multiplier>2236412381003659263</multiplier>
-		</add>
+		</add>
+		<add>
+			<accessor>Animable</accessor>
+			<field>aShort9798</field>
+			<methodname>getX</methodname>
+		</add>
+		<add>
+			<accessor>Animable</accessor>
+			<field>aShort9795</field>
+			<methodname>getY</methodname>
+		</add>
+		<add>
+			<accessor>Client</accessor>
+			<field>aClass365_Sub1_Sub1_Sub2_Sub2Array8805</field>
+			<methodname>getPlayers</methodname>
+			<desc>[%sPlayer</desc>
+		</add>
+		<add>
+			<accessor>Client</accessor>
+			<field>aClass283_8716</field>
+			<methodname>getScene</methodname>
+			<desc>%sScene</desc>
+		</add>
+		<add>
+			<classname>Class287</classname>
+			<into>client</into>
+			<field>myPlayer</field>
+			<methodname>getMyPlayer</methodname>
+			<desc>%sPlayer</desc>
+		</add>
+		<add>
+			<accessor>SceneData</accessor>
+			<field>gameSceneBaseX</field>
+			<methodname>getBaseX</methodname>
+			<multiplier>-1760580017</multiplier>
+		</add>
+		<add>
+			<accessor>SceneData</accessor>
+			<field>gameSceneBaseY</field>
+			<methodname>getBaseY</methodname>
+			<multiplier>283514611</multiplier>
+		</add>
+
 	</getters>
 	
 	<setters>
