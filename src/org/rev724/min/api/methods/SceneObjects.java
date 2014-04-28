@@ -24,7 +24,7 @@ public class SceneObjects {
 				for (AnimableNode node = ground.getInteractiveObjects(); node != null; node = node
 						.getNext()) {
 					object = node.getAnimable();
-					if (object != null) {
+					if (object != null && !(object instanceof org.rev724.min.accessors.Character) ) {
 						final SceneObject sceneObject = new SceneObject(object,
 								x, y, SceneObject.TYPE_INTERACTIVE);
 						objects.add(sceneObject);
