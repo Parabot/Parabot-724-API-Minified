@@ -11,6 +11,7 @@ import javax.swing.JMenuItem;
 import org.parabot.core.Context;
 import org.parabot.core.paint.PaintDebugger;
 import org.rev724.min.debug.DPlayer;
+import org.rev724.min.debug.DSceneObjects;
 
 public class BotMenu implements ActionListener {
 	
@@ -20,10 +21,13 @@ public class BotMenu implements ActionListener {
 		JMenu debug = new JMenu("Debug");
 	
 		JMenuItem player = newItem("Player");
+		JMenuItem sceneObjects = newItem("SceneObjects");
 		
 		debugger.addDebugger("Player", new DPlayer());
+		debugger.addDebugger("SceneObjects", new DSceneObjects());
 		
 		debug.add(player);
+		debug.add(sceneObjects);
 		
 		bar.add(debug);
 	}
