@@ -41,7 +41,7 @@ public class SceneObject {
 		} catch(AbstractMethodError e) {
 			return -1;
 		}*/
-		return 0;
+		return accessor.method45();
 	}
 
 	public int getType() {

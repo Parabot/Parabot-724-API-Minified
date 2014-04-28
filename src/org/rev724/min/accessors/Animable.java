@@ -5,5 +5,8 @@ public interface Animable {
 	public short getX();
 	
 	public short getY();
+	
+	
+	public int method45();
 
 }

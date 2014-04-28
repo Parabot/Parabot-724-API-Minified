@@ -21,7 +21,7 @@ public class DSceneObjects extends AbstractDebugger {
 	@Override
 	public void toggle() {
 		for(SceneObject s : SceneObjects.getSceneObjects()) {
-			System.out.println(s.getLocation());
+			System.out.println(s.getLocation() + " " + s.getId());
 		}
 		
 	}
