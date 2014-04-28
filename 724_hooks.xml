@@ -33,6 +33,18 @@
 			<classname>Class341</classname>
 			<interface>SceneData</interface>
 		</add>
+		<add>
+			<classname>Class326</classname>
+			<interface>Ground</interface>
+		</add>
+		<add>
+			<classname>Class322</classname>
+			<interface>AnimableNode</interface>
+		</add>
+		<add>
+			<classname>Class331</classname>
+			<interface>SceneWorld</interface>
+		</add>
 	</interfaces>
 	<getters>
 		<add>
@@ -41,6 +53,13 @@
 			<methodname>getSceneData</methodname>
 			<desc>%sSceneData</desc>
 		</add>
+		<add>
+			<accessor>Scene</accessor>
+			<field>aClass331_3037</field>
+			<methodname>getSceneWorld</methodname>
+			<desc>%sSceneWorld</desc>
+		</add>
+		
 		<add>
 			<accessor>MenuAction</accessor>
 			<field>anInt9662</field>
@@ -113,6 +132,33 @@
 			<methodname>getBaseY</methodname>
 			<multiplier>283514611</multiplier>
 		</add>
+		
+		<add>
+			<accessor>Ground</accessor>
+			<field>aClass322_3456</field>
+			<methodname>getInteractiveObjects</methodname>
+			<desc>%sAnimableNode</desc>
+		</add>
+		
+		<add>
+			<accessor>AnimableNode</accessor>
+			<field>aClass322_3358</field>
+			<methodname>getNext</methodname>
+			<desc>%sAnimableNode</desc>
+		</add>
+		<add>
+			<accessor>AnimableNode</accessor>
+			<field>aClass365_Sub1_Sub1_3359</field>
+			<methodname>getAnimable</methodname>
+			<desc>%sAnimable</desc>
+		</add>
+		
+		<add>
+			<accessor>SceneWorld</accessor>
+			<field>aClass326ArrayArrayArray3516</field>
+			<methodname>getGroundArray</methodname>
+			<desc>[[[%sGround</desc>
+		</add>
 
 	</getters>
 	
@@ -133,6 +179,14 @@
 	</callbacks>
 	
 	<invokers>
-		
+		<add>
+			<accessor>Animable</accessor>
+			<methodname>getId</methodname>
+			<invokemethod>method45</invokemethod>
+			<desc>I</desc>
+			<argsdesc>()</argsdesc>
+			<interface>true</interface>
+			<instancecast>Interface3</instancecast>
+		</add>
 	</invokers>
 </injector>
