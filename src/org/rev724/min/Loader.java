@@ -62,7 +62,7 @@ public class Loader extends ServerProvider {
 	@Override
 	public URL getJar() {
 		try {
-			return new URL("http://bot.parabot.org/servers/infinity.jar");
+			return new URL("http://bot.parabot.org/servers/revolution.jar");
 		} catch(Throwable t) {
 			t.printStackTrace();
 		}

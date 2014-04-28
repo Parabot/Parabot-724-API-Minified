@@ -76,7 +76,8 @@ public class AppletProvider extends Applet implements AppletStub {
 	@Override
 	public URL getCodeBase() {
 		try {
-			return new URL("http://192.184.9.31");
+			//return new URL("http://192.184.9.31");
+			return new URL("http://192.169.81.26");
 		} catch (Exception localException) {
 			localException.printStackTrace();
 		}
